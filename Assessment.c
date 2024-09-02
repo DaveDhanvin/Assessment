@@ -2,7 +2,7 @@
 #include <string.h>
 #include <ctype.h>
 
-// Function to reverse a string
+//reverse string
 void reverse_string(char str[]) {
     int len = strlen(str);
     for (int i = len - 1; i >= 0; i--) {
@@ -11,13 +11,13 @@ void reverse_string(char str[]) {
     printf("\n");
 }
 
-// Function to concatenate two strings
+//concatenate strings
 void concatenate_strings(char str1[], char str2[]) {
     strcat(str1, str2);
     printf("Concatenated String: %s\n", str1);
 }
 
-// Function to check if a string is a palindrome
+// palindrome
 void check_palindrome(char str[]) {
     int len = strlen(str);
     int flag = 1;
@@ -34,19 +34,18 @@ void check_palindrome(char str[]) {
     }
 }
 
-// Function to copy a string
+//copy string
 void copy_string(char str[]) {
     char copy[100];
     strcpy(copy, str);
     printf("Copied String: %s\n", copy);
 }
 
-// Function to find the length of a string
+//length of a string
 void string_length(char str[]) {
     printf("Length of the String: %ld\n", strlen(str));
 }
 
-// Function to find the frequency of a character in a string
 void char_frequency(char str[], char c) {
     int count = 0;
     for (int i = 0; i < strlen(str); i++) {
@@ -71,7 +70,7 @@ void count_vowels_consonants(char str[]) {
     printf("Vowels: %d, Consonants: %d\n", vowels, consonants);
 }
 
-// Function to count blank spaces and digits
+//count blank spaces and digits
 void count_spaces_digits(char str[]) {
     int spaces = 0, digits = 0;
     for (int i = 0; i < strlen(str); i++) {
@@ -91,7 +90,7 @@ int main() {
     char continue_choice;
 
     do {
-        // Display menu
+        // Display
         printf("\nString Operations Menu:\n");
         printf("1. Reverse a string\n");
         printf("2. Concatenate two strings\n");
@@ -103,7 +102,7 @@ int main() {
         printf("8. Find the number of blank spaces and digits\n");
         printf("Enter your choice (1-8): ");
         scanf("%d", &choice);
-        getchar(); // To consume newline character after scanf
+        getchar();
 
         switch (choice) {
             case 1:
